@@ -4,15 +4,18 @@ package by.rudakd.lesson2.task1;
 
 public class Task1 {
     public static void main(String[] args) {
-        int convertNumber = 1234;
-        int div = 1000, fact = 1;
+        int convertNumber = 123456;
+        int div = 1;
+        int fact = 1;
         int count = 0;
         int temp = convertNumber;
         if(temp > 0) {
             while(temp > 0) {
                 temp /= 10;
                 count++;
+                div *= 10;
             }
+            div /= 10;
         } else System.out.println("Число равно 0!");
         int number[] = new int[count];
         int authNum = 0;
